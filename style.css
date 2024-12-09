@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('romantic-love-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  .header{
+    color: white;
+  }
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: black;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .event {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .event h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .event p {
+    font-size: 18px;
+    color: #494848;
+  }
+  .timeline {
+    /* ... */
+    animation: fadeIn 2s;
+  }
+  
+  .event {
+    /* ... */
+    animation: slideIn 1s;
+    background-color: fuchsia;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  body {
+    /* ... */
+    font-family: 'Great Vibes', cursive;
+  }
+  
+  .timeline {
+    /* ... */
+    background-color: black; /* soft pink */
+  }
+  .event.expanded {
+    /* ... */
+    height: auto;
+    padding-bottom: 20px;
+  }
+  
+  .event .details {
+    /* ... */
+    display: none;
+  }
+  
+  .event.expanded .details {
+    display: block;
+  }
+  .gallery {
+    /* ... */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery img {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+  }        
+  .image1, .image2, .image3, .image4, .image5{
+    mask:
+   radial-gradient(at 70% 31%,#000 29%,#0000 30%),
+   radial-gradient(at 30% 31%,#000 29%,#0000 30%),
+   linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+  clip-path: polygon(-41% 0,50% 91%, 141% 0);
+    border: 2px solid white;
+  }
+  h3{
+    display: flex;
+    flex-direction: row;
+    margin-left: 550px;
+  }
+  .image6{
+    width: 500px;
+    height: 100px;
+    margin-left: 10px;
+    mask:
+   radial-gradient(at 70% 31%,#000 29%,#0000 30%),
+   radial-gradient(at 30% 31%,#000 29%,#0000 30%),
+   linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+  clip-path: polygon(-41% 0,50% 91%, 141% 0);
+  }
